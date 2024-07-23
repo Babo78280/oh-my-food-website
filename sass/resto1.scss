@@ -1,0 +1,395 @@
+// Variables
+$primary-color: #000; // Couleur principale (noir)
+$secondary-color: #fff; // Couleur secondaire (blanc)
+$highlight-color: #ff69b4; // Couleur d'accentuation (rose)
+$description-color: #777; // Couleur de description (gris)
+$background-color: #f5f5f5; // Couleur de fond
+$menu-background: #fff; // Couleur de fond du menu
+$button-background: linear-gradient(to right, #ff69b4, #ff1493); // Gradient du bouton
+$border-color: #ddd; // Couleur de la bordure
+:root {
+  --primary-color: #00bfa5; /* Définissez la couleur principale ici */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 1rem;
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  padding: 1rem;
+}
+
+.restaurant-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  h2 {
+    font-size: 1.75rem;
+    color: $primary-color;
+    margin: 0;
+    font-family:'Shrikhand', cursive ;
+    font-style: italic;
+    font-weight:400 ;
+    text-align: left;
+  }
+  h3.section-title1{
+    font-size: 24px;
+    font-family: 'Arial', sans-serif; /* Vous pouvez choisir la police qui correspond à votre design */
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  h3.section-title1::after{
+    content: '';
+    display: block;
+    width: 50px; /* La longueur du trait */
+    height: 4px; /* L'épaisseur du trait */
+    background-color: #00bfa5; /* La couleur du trait */
+    position: absolute;
+    bottom: -5px; /* Ajustez cette valeur pour déplacer le trait vers le bas */
+    left: 0;
+  }
+}
+
+.menu {
+  h3 {
+    font-size: 15px; 
+    margin-bottom: 0;
+    
+    
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    background-color: $menu-background;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.6 ease;
+    
+     input[type="checkbox"] {
+    display: none;
+  }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: $primary-color;
+    }
+    
+    span {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .description {
+      font-size: 0.875rem;
+      color: $description-color;
+    }
+  }
+}
+
+.order-btn {
+  display: block;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  background: $button-background;
+  color: $secondary-color;
+  border: none;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 2rem auto;
+  cursor: pointer;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+}
+
+.footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 1rem;
+  
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        display: block;
+        margin: 0.5rem 0;
+        
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.image-en-tete {
+    position: relative;
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+
+    .restaurant-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.contenu {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    top: -50px;
+    border-radius: 15px 15px 0 0;
+}
+
+.titre {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 20px;
+
+    .titre-section {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  .menu-animation {background-color: #000;
+  transition: 1s ease all;
+  width: 0px;
+  overflow: hidden;
+}
+&:hover .menu-animation {
+  flex: 0.1;
+  width: inherit;
+}
+.menu-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 0;
+
+  .description-container {
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: $primary-color;
+
+      &.description {
+        font-size: 0.875rem;
+        color: $description-color;
+      }
+    }
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.card-check {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: #b6e3dc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: width 1s ease;
+  
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #fff; /* Cercle blanc derrière l'icône */
+    border-radius: 50%; /* Pour rendre le cercle rond */
+    padding: 4px; /* Espace autour de l'icône pour créer le cercle */
+    color: #b6e3dc; /* Changer la couleur de l'icône de coche en vert */
+  }
+}
+
+input[type="checkbox"]:checked + .menu-description + .card-check {
+  display: flex;
+  width: 50px;
+}
+
+input[type="checkbox"]:checked + .menu-description {
+  transition: padding-right 0.6s ease; 
+  padding-right: 50px;
+   input[type="checkbox"]:checked + .menu-description span {
+    margin-right: 10px; /* Ajouter une marge droite pour maintenir le prix à une bonne position */
+  }
+}
+}
+}
+    .menu-item .menu-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        flex: 1;
+        transition: padding-right 1s ease; /* Rendre l'animation plus lente */
+      
+
+        .vote {
+            background-color: #ffc107;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .description-menu {
+            flex-grow: 1;
+
+            .nom-plat {
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            .detail-plat {
+                font-size: 0.9em;
+                color: #777;
+            }
+        }
+
+        .prix {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+.header-resto{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+}
+.main-resto1{
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  background: #F6F6F6;
+  padding: 1em;
+  top: 0px;
+  border-radius: 20px 20px 0px 0px;
+  @media (min-width: 1000px){
+    width: 80%;
+  }
+}
+
+
+
+.footer-resto{
+  position: relative;
+  bottom: 0px;
+  width: 92%;
+  z-index: 100;
+}
+.line{
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #00bfa5;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+}
+.heart-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.heart-icon {
+ margin-left: 8px;
+ display: block;
+}
+.heart-icon-filled {
+  margin-left: 8px;
+  display: none;
+}
+.title-heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-heart-container h2 {
+  margin: 0;
+  flex-grow: 1;
+}
+.container-app{
+  @media (min-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color:#fff ;
+}
+}
+.main-content{
+  @media (min-width: 1000px){
+    padding: 1rem 120px 1rem 120px;
+  }
+}
+.like-button {
+  cursor: pointer;
+  position: relative;
+
+  input[type="checkbox"] {
+      display: none;
+  }
+
+}

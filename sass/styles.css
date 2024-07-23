@@ -1,0 +1,512 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.main-header {
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px 15px;
+  height: 100%;
+}
+main .overlay {
+  height: 0em;
+  width: 93%;
+  opacity: 0%;
+  position: absolute;
+  background-color: #f6f6f6;
+  z-index: 10;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.intro h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.intro p {
+  color: #666;
+  margin-bottom: 20px;
+}
+.intro .explore-btn {
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  width: 218px;
+  height: 50px;
+}
+.intro .explore-button:hover {
+  background: linear-gradient(90deg, #63b3ed, #b066fa, #b066fa);
+  transform: translateY(-2px);
+}
+
+.how-it-works {
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.how-it-works h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 15px;
+}
+.how-it-works .steps {
+  display: flex;
+  justify-content: space-around;
+}
+.how-it-works .steps .step {
+  text-align: center;
+}
+.how-it-works .steps .step .step-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants .restaurant {
+  margin-bottom: 20px;
+}
+.restaurants .restaurant .restaurant-img {
+  width: 300px;
+  height: 250px;
+}
+.restaurants .restaurant .restaurant-info {
+  background-color: #fff;
+}
+.restaurants .restaurant .restaurant-info h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  margin: 0px;
+}
+.restaurants .restaurant .restaurant-info p {
+  font-size: 1em;
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: left;
+  padding: 10px 25px;
+}
+@media (min-width: 1000px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligne le contenu à droite */
+    text-align: right; /* Aligne le texte à droite */
+    padding: 20px;
+  }
+}
+footer .footer-links {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start; /* Alignement à gauche */
+  gap: 10px; /* Espacement entre les éléments */
+}
+@media (min-width: 1000px) {
+  footer .footer-links {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+footer .footer-link {
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  gap: 10px; /* Espace entre l'image et le texte */
+  color: #fff; /* Couleur du texte */
+  font-size: 14.5px; /* Taille de la police */
+}
+footer .footer-link img {
+  width: 11px; /* Ajustez la taille selon vos besoins */
+  height: 13px; /* Ajustez la taille selon vos besoins */
+}
+footer p {
+  color: #fff; /* Couleur du texte */
+  margin: 0; /* Supprime les marges par défaut */
+}
+footer .footer-links p {
+  margin: 5px 0;
+}
+@media (min-width: 1000px) {
+  footer .footer-links p {
+    order: 1;
+  }
+}
+footer .location-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer .location-icon {
+  width: 12px;
+  height: 12px;
+  background: url(assets/images/logo/Pin.png) no-repeat center center;
+  background-size: cover;
+  margin-right: 8px;
+}
+footer .location-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+footer .steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .step {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+@media (min-width: 1000px) {
+  .restaurants {
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #F6F6F6;
+  }
+}
+.restaurants h2 {
+  width: 100%;
+  text-align: left;
+}
+@media (min-width: 1000px) {
+  .restaurants h2 {
+    margin-left: 220px;
+  }
+}
+.restaurants .restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .restaurants .restaurant {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+.restaurants .restaurant input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.restaurants .restaurant .restaurant-img {
+  width: 370px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+@media (min-width: 1000px) {
+  .restaurants .restaurant .restaurant-img {
+    width: 498.65px;
+    height: 231px;
+  }
+}
+.restaurants .restaurant .restaurant-info {
+  background-color: #fff;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 10px;
+  margin: 0px;
+}
+@media (min-width: 1000px) {
+  .restaurants .restaurant .restaurant-info {
+    justify-content: center;
+    width: 52%;
+  }
+}
+.restaurants .restaurant .restaurant-info h3 {
+  font-size: 1.5em;
+  margin: 0px;
+}
+.restaurants .restaurant .restaurant-info p {
+  font-size: 1em;
+  color: #666;
+  margin: 1%;
+}
+
+.location-container .icon {
+  margin-right: 10px;
+}
+
+.logo-container img {
+  width: 200px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .logo-container img {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 100px;
+  }
+}
+
+.main-header {
+  background-color: #fff; /* Couleur de fond pour le header entier */
+  padding-bottom: 0; /* Supprimer le padding en bas */
+  text-align: center; /* Centrer le contenu */
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+@media (min-width: 1000px) {
+  .main-header {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+.logo-container {
+  background-color: #fff; /* Fond blanc pour le logo */
+  padding: 5px 0; /* Padding pour le logo */
+  margin-bottom: 0; /* Supprimer la marge entre le logo et la section en dessous */
+}
+
+.location-section {
+  background-color: #eaeaea; /* Couleur de fond pour la section de localisation */
+  padding: 10px 0; /* Padding pour la section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre portée */
+  padding-top: 50px;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px; /* Limite maximale pour le centrage du contenu */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 10px 20px; /* Padding interne */
+}
+@media (min-width: 1000px) {
+  .location-container {
+    padding: 2px 2px;
+    margin-top: 20px;
+  }
+}
+.location-container .location-icon {
+  margin-right: 10px; /* Ajustement de l'espacement entre l'icône et le texte */
+}
+.location-container .location-text {
+  font-weight: bold;
+}
+
+/* Small devices (phones, less than 768px) */
+/* Ajustements pour les différentes tailles d'écran */
+@media (max-width: 768px) {
+  .logo-container img {
+    width: 200px; /* Taille pour les tablettes */
+  }
+}
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 150px; /* Taille pour les téléphones */
+  }
+}
+.nav-background {
+  background-color: #f6f6f6;
+  padding: 20px;
+  box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1000px) {
+  .nav-background {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.how-it-works h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+@media (min-width: 1000px) {
+  .how-it-works h2 {
+    margin-left: 230px;
+  }
+}
+.how-it-works .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1000px) {
+  .how-it-works .steps {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+}
+.how-it-works .steps .step {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+  height: 25px;
+}
+.how-it-works .steps .step .step-icon {
+  background-color: #8e44ad;
+  color: white;
+  border-radius: 50%;
+  font-size: 14.18px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute; /* Positionnement absolu pour dépasser */
+  left: -20px; /* Ajustez cette valeur pour contrôler le dépassement */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.how-it-works .steps .step .step-info {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* Ajustement pour compenser l'icône qui dépasse */
+}
+.how-it-works .steps .step .logo-fonc {
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.how-it-works .steps .step .step-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.coeur-resto {
+  width: 22px;
+  height: 21px;
+  margin: 10px;
+  font-size: 18px;
+  color: #8e44ad;
+}
+
+.restaurant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.footer-logo {
+  width: auto color #eaeaea;
+  height: 20px;
+  filter: invert(1) brightness(1000%); /* Rend l'image blanche */
+}
+@media (min-width: 1000px) {
+  .footer-logo {
+    display: flex;
+    order: 5;
+  }
+}
+
+.go-back {
+  width: 30px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.go-back img {
+  padding-top: 13px;
+  margin-left: 10px;
+}
+
+.heart-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.heart-icon {
+  margin-left: 8px;
+  display: block;
+}
+
+.heart-icon-filled {
+  margin-left: 8px;
+  display: none;
+}
+
+.like-button {
+  cursor: pointer;
+  position: relative;
+}
+.like-button input[type=checkbox] {
+  display: none;
+}
+.like-button .heart-icon {
+  display: block;
+}
+.like-button .heart-icon-filled {
+  display: none;
+}
+.like-button input[type=checkbox]:checked + .heart-icon {
+  display: none;
+}
+.like-button input[type=checkbox]:checked + .heart-icon + .heart-icon-filled {
+  display: block;
+}/*# sourceMappingURL=styles.css.map */
