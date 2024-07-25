@@ -96,6 +96,7 @@ main .overlay {
   height: 250px;
 }
 .restaurants .restaurant .restaurant-info {
+  width: 300px;
   background-color: #fff;
 }
 .restaurants .restaurant .restaurant-info h3 {
@@ -251,7 +252,7 @@ footer .step {
 .restaurants .restaurant .restaurant-info {
   background-color: #fff;
   text-align: left;
-  width: 100%;
+  width: 370px;
   display: flex;
   flex-direction: column;
   color: #333;
@@ -262,7 +263,7 @@ footer .step {
 @media (min-width: 1000px) {
   .restaurants .restaurant .restaurant-info {
     justify-content: center;
-    width: 52%;
+    width: 488.65px;
   }
 }
 .restaurants .restaurant .restaurant-info h3 {
