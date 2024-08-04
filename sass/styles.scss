@@ -224,9 +224,16 @@ footer {
       border-radius: 10px 10px 0px 0px;
       position: relative;
       text-decoration: none;
+
+      a {
+        width: 95%;
+      }
       @media (min-width: 1000px){
         padding: 20px 60px;
         flex: 1 1 calc(40% - 0px);
+        a {
+          width: 100%;
+        }
       }
 
       input {
@@ -452,8 +459,8 @@ footer {
         display: flex;
         order: 5;
       }
-      width: auto
-      color  #eaeaea;
+      width: auto;
+      color: #eaeaea;
       height : 20px;
       filter: invert(1) brightness(1000%); /* Rend l'image blanche */
     }

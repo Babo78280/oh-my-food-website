@@ -217,10 +217,16 @@ footer .step {
   position: relative;
   text-decoration: none;
 }
+.restaurants .restaurant a {
+  width: 95%;
+}
 @media (min-width: 1000px) {
   .restaurants .restaurant {
     padding: 20px 60px;
     flex: 1 1 calc(40% - 0px);
+  }
+  .restaurants .restaurant a {
+    width: 100%;
   }
 }
 .restaurants .restaurant input {
@@ -442,7 +448,8 @@ footer .step {
 }
 
 .footer-logo {
-  width: auto color #eaeaea;
+  width: auto;
+  color: #eaeaea;
   height: 20px;
   filter: invert(1) brightness(1000%); /* Rend l'image blanche */
 }

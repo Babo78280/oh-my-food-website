@@ -207,12 +207,12 @@ body {
   flex: 0.1;
   width: inherit;
 }
-.menu-description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-right: 0;
+  .menu-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
 
   .description-container {
     p {
