@@ -15,7 +15,6 @@ body {
 }
 
 main {
-  padding: 20px 15px;
   height: 100%;
 }
 main .overlay {
@@ -25,6 +24,17 @@ main .overlay {
   position: absolute;
   background-color: #f6f6f6;
   z-index: 10;
+}
+
+h2 {
+  padding: 0 5%;
+  text-align: left;
+}
+@media (min-width: 1000px) {
+  h2 {
+    padding: 0 13%;
+    width: 300px;
+  }
 }
 
 .intro {
@@ -67,15 +77,8 @@ main .overlay {
   margin-bottom: 30px;
   background-color: #fff;
 }
-.how-it-works h2 {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  text-align: left;
-  margin-left: 15px;
-}
 .how-it-works .steps {
   display: flex;
-  justify-content: space-around;
 }
 .how-it-works .steps .step {
   text-align: center;
@@ -201,15 +204,7 @@ footer .step {
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #F6F6F6;
-  }
-}
-.restaurants h2 {
-  width: 100%;
-  text-align: left;
-}
-@media (min-width: 1000px) {
-  .restaurants h2 {
-    margin-left: 220px;
+    padding: 0 10%;
   }
 }
 .restaurants .restaurant {
@@ -224,7 +219,8 @@ footer .step {
 }
 @media (min-width: 1000px) {
   .restaurants .restaurant {
-    flex: 1 1 calc(50% - 10px);
+    padding: 20px 60px;
+    flex: 1 1 calc(40% - 0px);
   }
 }
 .restaurants .restaurant input {
@@ -245,7 +241,7 @@ footer .step {
 }
 @media (min-width: 1000px) {
   .restaurants .restaurant .restaurant-img {
-    width: 498.65px;
+    width: 100%;
     height: 231px;
   }
 }
@@ -257,13 +253,13 @@ footer .step {
   flex-direction: column;
   color: #333;
   border-radius: 0px 0px 10px 10px;
-  padding-left: 10px;
+  padding: 0 1% 0 1%;
   margin: 0px;
 }
 @media (min-width: 1000px) {
   .restaurants .restaurant .restaurant-info {
     justify-content: center;
-    width: 488.65px;
+    width: 98%;
   }
 }
 .restaurants .restaurant .restaurant-info h3 {
@@ -333,15 +329,17 @@ footer .step {
 }
 @media (min-width: 1000px) {
   .location-container {
-    padding: 2px 2px;
+    padding: 2px 2px 10px 2px;
     margin-top: 20px;
   }
 }
 .location-container .location-icon {
   margin-right: 10px; /* Ajustement de l'espacement entre l'icône et le texte */
+  padding-top: 10px;
 }
 .location-container .location-text {
   font-weight: bold;
+  padding-top: 10px;
 }
 
 /* Small devices (phones, less than 768px) */
@@ -359,7 +357,6 @@ footer .step {
 .nav-background {
   background-color: #f6f6f6;
   padding: 20px;
-  box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 1000px) {
   .nav-background {
@@ -369,17 +366,8 @@ footer .step {
 
 .how-it-works {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10px 50px 10px;
   background-color: #fff;
-}
-.how-it-works h2 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-@media (min-width: 1000px) {
-  .how-it-works h2 {
-    margin-left: 230px;
-  }
 }
 .how-it-works .steps {
   display: flex;
@@ -389,9 +377,9 @@ footer .step {
 }
 @media (min-width: 1000px) {
   .how-it-works .steps {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
+    padding: 20px 13%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
   }
 }
 .how-it-works .steps .step {
@@ -401,9 +389,9 @@ footer .step {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 80%;
   position: relative;
-  height: 25px;
+  height: 40px;
 }
 .how-it-works .steps .step .step-icon {
   background-color: #8e44ad;
