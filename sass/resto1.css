@@ -180,6 +180,14 @@ body {
   width: 0px;
   overflow: hidden;
 }
+.menu .menu-item:hover .card-check {
+  display: flex;
+  width: 50px;
+  justify-content: center;
+}
+.menu .menu-item:hover .card-check svg {
+  opacity: 100%;
+}
 .menu .menu-item:hover .menu-animation {
   flex: 0.1;
   width: inherit;
@@ -205,8 +213,8 @@ body {
   font-weight: bold;
 }
 .menu .menu-item .card-check {
-  display: none;
   position: absolute;
+  display: flex;
   right: 0;
   top: 0;
   bottom: 0;
@@ -219,6 +227,8 @@ body {
   transition: width 1s ease;
 }
 .menu .menu-item .card-check svg {
+  opacity: 0%;
+  transition: opacity 0.6s ease-in-out;
   width: 20px;
   height: 20px;
   color: #fff;
@@ -227,15 +237,11 @@ body {
   padding: 4px; /* Espace autour de l'icône pour créer le cercle */
   color: #b6e3dc; /* Changer la couleur de l'icône de coche en vert */
 }
-.menu .menu-item input[type=checkbox]:checked + .menu-description + .card-check {
-  display: flex;
-  width: 50px;
-}
-.menu .menu-item input[type=checkbox]:checked + .menu-description {
+.menu .menu-item .menu-description:hover {
   transition: padding-right 0.6s ease;
   padding-right: 50px;
 }
-.menu .menu-item input[type=checkbox]:checked + .menu-description input[type=checkbox]:checked + .menu-description span {
+.menu .menu-item .menu-description:hover .menu-description span::hover {
   margin-right: 10px; /* Ajouter une marge droite pour maintenir le prix à une bonne position */
 }
 

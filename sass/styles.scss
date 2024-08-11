@@ -29,7 +29,6 @@ h2 {
   padding: 0 5%;
   @media (min-width: 1000px){
     padding: 0 13%;
-    width: 300px;
   }
   text-align: left;
 }
@@ -64,7 +63,7 @@ h2 {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background 0.3s ease, transform 0.3s ease;
       display: inline-block;
-      width: 218px;
+      width: 15rem;
       height: 50px;
   }
   .explore-button:hover {
@@ -93,15 +92,9 @@ h2 {
 .restaurants {
   background-color: #F6F6F6;
   .restaurant {
-      margin-bottom: 20px; // Ajoutez un espace entre les restaurants
-
-      .restaurant-img {
-          width: 300px; // Ajustez la largeur selon vos besoins
-          height: 250px; // Conserve les proportions de l'image
-      }
+      margin-bottom: 20px;
 
       .restaurant-info {
-          width: 300px; 
           background-color: #fff;
           // Si vous avez des styles spécifiques pour h3 et p, ajoutez-les ici
           h3 {
@@ -252,7 +245,7 @@ footer {
             height: 231px;
 
           }
-          width: 370px; // Ajustez la largeur selon vos besoins
+          width: 100%; // Ajustez la largeur selon vos besoins
           height: 200px; // Conserve les proportions de l'image
           object-fit: cover;
           border-radius: 10px 10px 0px 0px;
@@ -262,7 +255,7 @@ footer {
       .restaurant-info {
           background-color: #fff;
           text-align: left; //
-          width: 370px;
+          width: 93%;
           display: flex;
           flex-direction: column;
           color: #333;
@@ -299,11 +292,11 @@ footer {
   max-width: 100%; // Assurez-vous que l'image ne dépasse pas la largeur du conteneur
 
   @media (max-width: 768px) {
-    width: 150px; // Taille pour les tablettes
+    width: 12rem; // Taille pour les tablettes
   }
 
   @media (max-width: 480px) {
-    width: 100px; // Taille pour les téléphones
+    width: 12rem; // Taille pour les téléphones
   }
 }
 .main-header {
@@ -357,13 +350,13 @@ footer {
 /* Ajustements pour les différentes tailles d'écran */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 200px; /* Taille pour les tablettes */
+    width: 12rem; /* Taille pour les tablettes */
   }
 }
 
 @media (max-width: 480px) {
   .logo-container img {
-    width: 150px; /* Taille pour les téléphones */
+    width: 12rem; /* Taille pour les téléphones */
   }
 }
 .nav-background {
@@ -382,7 +375,7 @@ footer {
     @media (min-width: 1000px){
       padding: 20px 13%;
       display: grid;
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: 1fr 1fr 1fr;
     }
       display: flex;
       flex-direction: column;
@@ -513,4 +506,14 @@ input[type="checkbox"]:checked + .heart-icon {
 input[type="checkbox"]:checked + .heart-icon + .heart-icon-filled {
   display: block;
 }
+}
+
+.like-button {
+  cursor: pointer;
+  position: relative;
+
+  input[type="checkbox"] {
+      display: none;
+  }
+
 }

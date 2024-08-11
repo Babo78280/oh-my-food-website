@@ -23,7 +23,7 @@ body {
   color: $secondary-color;
   text-align: center;
   padding: 1rem;
-  
+
   h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -37,7 +37,7 @@ body {
 .restaurant-info {
   text-align: center;
   margin-bottom: 2rem;
-  
+
   h2 {
     font-size: 1.75rem;
     color: $primary-color;
@@ -68,10 +68,10 @@ body {
 
 .menu {
   h3 {
-    font-size: 15px; 
+    font-size: 15px;
     margin-bottom: 0;
-    
-    
+
+
   }
 
   .menu-item {
@@ -88,7 +88,7 @@ body {
     position: relative;
     overflow: hidden;
     transition: 0.6 ease;
-    
+
      input[type="checkbox"] {
     display: none;
   }
@@ -98,12 +98,12 @@ body {
       font-size: 1rem;
       color: $primary-color;
     }
-    
+
     span {
       font-size: 1rem;
       margin-top: 0.5rem;
     }
-    
+
     .description {
       font-size: 0.875rem;
       color: $description-color;
@@ -135,21 +135,21 @@ body {
   color: $secondary-color;
   text-align: center;
   padding: 1rem;
-  
+
   nav {
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      
+
       li {
         display: block;
         margin: 0.5rem 0;
-        
+
         a {
           color: $secondary-color;
           text-decoration: none;
-          
+
           &:hover {
             text-decoration: underline;
           }
@@ -203,6 +203,14 @@ body {
   width: 0px;
   overflow: hidden;
 }
+&:hover .card-check {
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  svg {
+    opacity: 100%;
+  }
+}
 &:hover .menu-animation {
   flex: 0.1;
   width: inherit;
@@ -234,8 +242,8 @@ body {
 }
 
 .card-check {
-  display: none;
   position: absolute;
+  display: flex;
   right: 0;
   top: 0;
   bottom: 0;
@@ -246,9 +254,11 @@ body {
   align-items: center;
   justify-content: center;
   transition: width 1s ease;
-  
+
 
   svg {
+    opacity: 0%;
+    transition: opacity 0.6s ease-in-out;
     width: 20px;
     height: 20px;
     color: #fff;
@@ -259,15 +269,10 @@ body {
   }
 }
 
-input[type="checkbox"]:checked + .menu-description + .card-check {
-  display: flex;
-  width: 50px;
-}
-
-input[type="checkbox"]:checked + .menu-description {
-  transition: padding-right 0.6s ease; 
+.menu-description:hover {
+  transition: padding-right 0.6s ease;
   padding-right: 50px;
-   input[type="checkbox"]:checked + .menu-description span {
+  .menu-description span::hover {
     margin-right: 10px; /* Ajouter une marge droite pour maintenir le prix à une bonne position */
   }
 }
@@ -280,7 +285,7 @@ input[type="checkbox"]:checked + .menu-description {
         padding: 10px;
         flex: 1;
         transition: padding-right 1s ease; /* Rendre l'animation plus lente */
-      
+
 
         .vote {
             background-color: #ffc107;

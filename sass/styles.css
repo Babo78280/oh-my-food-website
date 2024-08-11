@@ -33,7 +33,6 @@ h2 {
 @media (min-width: 1000px) {
   h2 {
     padding: 0 13%;
-    width: 300px;
   }
 }
 
@@ -65,7 +64,7 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease, transform 0.3s ease;
   display: inline-block;
-  width: 218px;
+  width: 15rem;
   height: 50px;
 }
 .intro .explore-button:hover {
@@ -94,12 +93,7 @@ h2 {
 .restaurants .restaurant {
   margin-bottom: 20px;
 }
-.restaurants .restaurant .restaurant-img {
-  width: 300px;
-  height: 250px;
-}
 .restaurants .restaurant .restaurant-info {
-  width: 300px;
   background-color: #fff;
 }
 .restaurants .restaurant .restaurant-info h3 {
@@ -239,7 +233,7 @@ footer .step {
   cursor: pointer;
 }
 .restaurants .restaurant .restaurant-img {
-  width: 370px;
+  width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -254,7 +248,7 @@ footer .step {
 .restaurants .restaurant .restaurant-info {
   background-color: #fff;
   text-align: left;
-  width: 370px;
+  width: 93%;
   display: flex;
   flex-direction: column;
   color: #333;
@@ -288,12 +282,12 @@ footer .step {
 }
 @media (max-width: 768px) {
   .logo-container img {
-    width: 150px;
+    width: 12rem;
   }
 }
 @media (max-width: 480px) {
   .logo-container img {
-    width: 100px;
+    width: 12rem;
   }
 }
 
@@ -352,12 +346,12 @@ footer .step {
 /* Ajustements pour les différentes tailles d'écran */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 200px; /* Taille pour les tablettes */
+    width: 12rem; /* Taille pour les tablettes */
   }
 }
 @media (max-width: 480px) {
   .logo-container img {
-    width: 150px; /* Taille pour les téléphones */
+    width: 12rem; /* Taille pour les téléphones */
   }
 }
 .nav-background {
@@ -385,7 +379,7 @@ footer .step {
   .how-it-works .steps {
     padding: 20px 13%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .how-it-works .steps .step {
@@ -505,4 +499,12 @@ footer .step {
 }
 .like-button input[type=checkbox]:checked + .heart-icon + .heart-icon-filled {
   display: block;
+}
+
+.like-button {
+  cursor: pointer;
+  position: relative;
+}
+.like-button input[type=checkbox] {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
