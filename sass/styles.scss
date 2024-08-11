@@ -220,12 +220,14 @@ footer {
 
       a {
         width: 95%;
+        margin-bottom: -5px;
       }
       @media (min-width: 1000px){
         padding: 20px 60px;
         flex: 1 1 calc(40% - 0px);
         a {
           width: 100%;
+          margin-bottom: -5px;
         }
       }
 

@@ -213,6 +213,7 @@ footer .step {
 }
 .restaurants .restaurant a {
   width: 95%;
+  margin-bottom: -5px;
 }
 @media (min-width: 1000px) {
   .restaurants .restaurant {
@@ -221,6 +222,7 @@ footer .step {
   }
   .restaurants .restaurant a {
     width: 100%;
+    margin-bottom: -5px;
   }
 }
 .restaurants .restaurant input {
