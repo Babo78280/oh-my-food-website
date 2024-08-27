@@ -7,157 +7,166 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header class="main-header">
-            <div class="logo-container">
-                <img src="./assets/images/logo/ohmyfood.png" alt="logo du site">
+        <div class="loader" id="loader"></div>
+        <div id="content" class="content">
+            <header class="main-header">
+                <div class="logo-container">
+                    <img src="./assets/images/logo/ohmyfood.png" alt="logo du site">
+                </div>
+            </header>
+            <div class="location-section">
+                <div class="location-container">
+                    <span class="location-icon"><img
+                            src="./assets/images/logo/Pin.png" alt="logo"></span>
+                    <span class="location-text">Paris, Belleville</span>
+                </div>
             </div>
-        </header>
-        <div class="location-section">
-            <div class="location-container">
-                <span class="location-icon"><img
-                        src="./assets/images/logo/Pin.png" alt="logo"></span>
-                <span class="location-text">Paris, Belleville</span>
-            </div>
-        </div>
-        <main>
-            <div class="nav-background">
-                <section class="intro">
-                    <h1>Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception, sélectionnés par nos
-                        soins.</p>
-                    <div class="button-container">
-                        <button class="explore-btn">Explorer nos restaurants</button>
+            <main>
+                <div class="nav-background">
+                    <section class="intro">
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d'exception, sélectionnés par nos
+                            soins.</p>
+                        <div class="button-container">
+                            <button class="explore-btn">Explorer nos restaurants</button>
+                        </div>
+                    </section>
+                </div>
+                <section class="how-it-works">
+                    <h2>Fonctionnement</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-icon">1</div>
+                            <div class="step-info">
+                            <img class="logo-fonc" src="./assets/images/logo/mobile-screen-button.png" alt="mobile">
+                                <p>Choisissez un restaurant</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">2</div>
+                            <div class="step-info">
+                            <img class="logo-fonc" src="./assets/images/logo/list-ul.png" alt="liste">
+                                <p>Composez votre menu</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">3</div>
+                            <div class="step-info">
+                            <img class="logo-fonc" src="./assets/images/logo/store.png" alt="boutique">
+                                <p>Dégustez au restaurant</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
-            </div>
-            <section class="how-it-works">
-                <h2>Fonctionnement</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-icon">1</div>
-                        <div class="step-info">
-                        <img class="logo-fonc" src="./assets/images/logo/mobile-screen-button.png" alt="mobile">
-                            <p>Choisissez un restaurant</p>
+                <h2>Restaurants</h2>
+                <section class="restaurants">
+                    <div class="restaurant" >
+                        <div class="restaurant-tag">
+                            <p>Nouveau</p>
                         </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon">2</div>
-                        <div class="step-info">
-                        <img class="logo-fonc" src="./assets/images/logo/list-ul.png" alt="liste">
-                            <p>Composez votre menu</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon">3</div>
-                        <div class="step-info">
-                        <img class="logo-fonc" src="./assets/images/logo/store.png" alt="boutique">
-                            <p>Dégustez au restaurant</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <h2>Restaurants</h2>
-            <section class="restaurants">
-                <div class="restaurant" >
-                    <a href="resto1.html">
-                        <img class="restaurant-img"
-                            src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="Restaurant La palette du goût">
-                    </a>
-                    
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                        <h3>La palette du goût</h3>
-                        <div class="heart-container">
-                            <label class="like-button">
-                                <input type="checkbox">
-                                <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
-                                <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
-                            </label>
-                        </div>
-                    </div>
-                        <p>Montmartre</p>
-                    </div>
-                </div>
-                <div class="restaurant">
-                    <a href="resto3.html">
-                        <img class="restaurant-img"
-                            src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                            alt="Restaurant La note enchantée">
-                    </a>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                        <h3>La note enchantée</h3>
-                        <div class="heart-container">
-                            <label class="like-button">
-                                <input type="checkbox">
-                                <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
-                                <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
-                            </label>
-                        </div>
-                    </div>
-                        <p>Charonne</p>
-                    </div>
-                </div>
+                        <a href="resto1.html">
+                            <img class="restaurant-img"
+                                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="Restaurant La palette du goût">
+                        </a>
 
-                <div class="restaurant" >
-                    <a href="resto4.html">
-                        <img class="restaurant-img"
-                            src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="Restaurant À la française">
-                    </a>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                        <h3>À la française</h3>
-                        <div class="heart-container">
-                            <label class="like-button">
-                                <input type="checkbox">
-                                <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
-                                <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
-                            </label>
+                        <div class="restaurant-info">
+                            <div class="restaurant-header">
+                            <h3>La palette du goût</h3>
+                            <div class="heart-container">
+                                <label class="like-button">
+                                    <input type="checkbox">
+                                    <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
+                                    <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
+                                </label>
+                            </div>
+                        </div>
+                            <p>Montmartre</p>
                         </div>
                     </div>
-                        <p>Cité rouge</p>
-                    </div>
-                </div>
-
-                <div class="restaurant">
-                    <a href="resto2.html">
-                        <img class="restaurant-img"
-                            src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="Restaurant Le délice des sens">
-                    </a>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                        <h3>Le délice des sens</h3>
-                        <div class="heart-container">
-                            <label class="like-button">
-                                <input type="checkbox">
-                                <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
-                                <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
-                            </label>
+                    <div class="restaurant">
+                        <div class="restaurant-tag">
+                            <p>Nouveau</p>
+                        </div>
+                        <a href="resto3.html">
+                            <img class="restaurant-img"
+                                src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="Restaurant La note enchantée">
+                        </a>
+                        <div class="restaurant-info">
+                            <div class="restaurant-header">
+                            <h3>La note enchantée</h3>
+                            <div class="heart-container">
+                                <label class="like-button">
+                                    <input type="checkbox">
+                                    <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
+                                    <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
+                                </label>
+                            </div>
+                        </div>
+                            <p>Charonne</p>
                         </div>
                     </div>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                </div>
 
-            </section>
-        </main>
-        <footer>
-            <div class="footer-links">
-                <img class="footer-logo" src="./assets/images/logo/ohmyfood.png" alt="logo">
-              <div class="footer-link">
-                <img src="./assets/images/logo/Vector.png" alt="couvert">
-                <p>Proposer un restaurant</p>
-              </div>
-              <div class="footer-link">
-                <img src="./assets/images/logo/poignée.png" alt="poignée">
-                <p>Devenir partenaire</p>
-              </div>
-              <p>Mentions légales</p>
-              <p>Contact</p>
-            </div>
-          </footer>
+                    <div class="restaurant" >
+                        <a href="resto4.html">
+                            <img class="restaurant-img"
+                                src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="Restaurant À la française">
+                        </a>
+                        <div class="restaurant-info">
+                            <div class="restaurant-header">
+                            <h3>À la française</h3>
+                            <div class="heart-container">
+                                <label class="like-button">
+                                    <input type="checkbox">
+                                    <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
+                                    <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
+                                </label>
+                            </div>
+                        </div>
+                            <p>Cité rouge</p>
+                        </div>
+                    </div>
+
+                    <div class="restaurant">
+                        <a href="resto2.html">
+                            <img class="restaurant-img"
+                                src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Restaurant Le délice des sens">
+                        </a>
+                        <div class="restaurant-info">
+                            <div class="restaurant-header">
+                            <h3>Le délice des sens</h3>
+                            <div class="heart-container">
+                                <label class="like-button">
+                                    <input type="checkbox">
+                                    <img src="./assets/images/logo/Vector(1).png" alt="coeur" class="heart-icon">
+                                    <img src="./assets/images/logo/Vector(3).png" alt="coeur rempli" class="heart-icon-filled">
+                                </label>
+                            </div>
+                        </div>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+            <footer>
+                <div class="footer-links">
+                    <img class="footer-logo" src="./assets/images/logo/ohmyfood.png" alt="logo">
+                  <div class="footer-link">
+                    <img src="./assets/images/logo/Vector.png" alt="couvert">
+                    <p>Proposer un restaurant</p>
+                  </div>
+                  <div class="footer-link">
+                    <img src="./assets/images/logo/poignée.png" alt="poignée">
+                    <p>Devenir partenaire</p>
+                  </div>
+                  <p>Mentions légales</p>
+                  <p>Contact</p>
+                </div>
+              </footer>
+        </div>
     </body>
 </html>
