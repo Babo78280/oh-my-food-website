@@ -385,12 +385,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 38%;
+  h2 { 
+    margin: 0;
+    flex-grow: 1;
+    padding: 0;
+  }
 }
 
-.title-heart-container h2 {
-  margin: 0;
-  flex-grow: 1;
-}
 .container-app{
   @media (min-width: 1000px){
     flex-direction: column;

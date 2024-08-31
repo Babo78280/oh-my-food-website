@@ -140,7 +140,11 @@ h2 {
     background-color: #99E2D0;
     color: #278870;
     font-weight: 500;
+    @media (max-width: 768px){
+      top: 10px;
+      right: 20px;
   }
+}
   background-color: #F6F6F6;
   .restaurant {
       margin-bottom: 20px;

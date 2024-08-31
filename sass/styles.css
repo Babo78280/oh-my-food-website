@@ -149,6 +149,12 @@ h2 {
   color: #278870;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .restaurants .restaurant-tag {
+    top: 10px;
+    right: 20px;
+  }
+}
 .restaurants .restaurant {
   margin-bottom: 20px;
 }
