@@ -75,7 +75,7 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: 0.6 ease;
+  transition: opacity 0.6s ease;
 }
 .menu .menu-item input[type=checkbox] {
   display: none;
@@ -254,7 +254,7 @@ body {
   transition: padding-right 0.6s ease;
   padding-right: 50px;
 }
-.menu .menu-item .menu-description:hover .menu-description span::hover {
+.menu .menu-item .menu-description:hover .menu-description span:hover {
   margin-right: 10px;
 }
 

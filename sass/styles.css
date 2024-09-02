@@ -412,12 +412,12 @@ footer .step {
 /* Ajustements pour les différentes tailles d'écran */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 12rem; /* Taille pour les tablettes */
+    width: 12rem;
   }
 }
 @media (max-width: 480px) {
   .logo-container img {
-    width: 12rem; /* Taille pour les téléphones */
+    width: 12rem;
   }
 }
 .nav-background {
