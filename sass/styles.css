@@ -5,7 +5,6 @@ body {
   padding: 0;
   background-color: #f7f7f7;
   color: #333;
-  /* Styles pour masquer le contenu au début et le faire apparaître après 2s */
 }
 body .loader {
   position: fixed;
@@ -15,7 +14,7 @@ body .loader {
   width: 80px;
   height: 80px;
   border: 8px solid #f3f3f3;
-  border-top: 8px solid #FF0066; /* Couleur principale de Ohmyfood */
+  border-top: 8px solid #FF0066;
   border-radius: 50%;
   animation: spin 1.5s linear infinite, fadeOut 1s forwards 1.5s;
   background-color: transparent;
@@ -181,16 +180,16 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Aligne le contenu à droite */
-    text-align: right; /* Aligne le texte à droite */
+    align-items: flex-end;
+    text-align: right;
     padding: 20px;
   }
 }
 footer .footer-links {
   flex-direction: column;
   display: flex;
-  align-items: flex-start; /* Alignement à gauche */
-  gap: 10px; /* Espacement entre les éléments */
+  align-items: flex-start;
+  gap: 10px;
 }
 @media (min-width: 1000px) {
   footer .footer-links {
@@ -200,18 +199,18 @@ footer .footer-links {
 }
 footer .footer-link {
   display: flex;
-  align-items: center; /* Centre les éléments verticalement */
-  gap: 10px; /* Espace entre l'image et le texte */
-  color: #fff; /* Couleur du texte */
-  font-size: 14.5px; /* Taille de la police */
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14.5px;
 }
 footer .footer-link img {
-  width: 11px; /* Ajustez la taille selon vos besoins */
-  height: 13px; /* Ajustez la taille selon vos besoins */
+  width: 11px;
+  height: 13px;
 }
 footer p {
-  color: #fff; /* Couleur du texte */
-  margin: 0; /* Supprime les marges par défaut */
+  color: #fff;
+  margin: 0;
 }
 footer .footer-links p {
   margin: 5px 0;
@@ -359,9 +358,9 @@ footer .step {
 }
 
 .main-header {
-  background-color: #fff; /* Couleur de fond pour le header entier */
-  padding-bottom: 0; /* Supprimer le padding en bas */
-  text-align: center; /* Centrer le contenu */
+  background-color: #fff;
+  padding-bottom: 0;
+  text-align: center;
   position: fixed;
   width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -374,15 +373,15 @@ footer .step {
 }
 
 .logo-container {
-  background-color: #fff; /* Fond blanc pour le logo */
-  padding: 5px 0; /* Padding pour le logo */
-  margin-bottom: 0; /* Supprimer la marge entre le logo et la section en dessous */
+  background-color: #fff;
+  padding: 5px 0;
+  margin-bottom: 0;
 }
 
 .location-section {
-  background-color: #eaeaea; /* Couleur de fond pour la section de localisation */
-  padding: 10px 0; /* Padding pour la section */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre portée */
+  background-color: #eaeaea;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding-top: 50px;
 }
 
@@ -390,9 +389,9 @@ footer .step {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px; /* Limite maximale pour le centrage du contenu */
-  margin: 0 auto; /* Centrer horizontalement */
-  padding: 10px 20px; /* Padding interne */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 @media (min-width: 1000px) {
   .location-container {
@@ -401,7 +400,7 @@ footer .step {
   }
 }
 .location-container .location-icon {
-  margin-right: 10px; /* Ajustement de l'espacement entre l'icône et le texte */
+  margin-right: 10px;
   padding-top: 10px;
 }
 .location-container .location-text {
@@ -471,15 +470,15 @@ footer .step {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  position: absolute; /* Positionnement absolu pour dépasser */
-  left: -20px; /* Ajustez cette valeur pour contrôler le dépassement */
+  position: absolute;
+  left: -20px;
   top: 50%;
   transform: translateY(-50%);
 }
 .how-it-works .steps .step .step-info {
   display: flex;
   align-items: center;
-  margin-left: 40px; /* Ajustement pour compenser l'icône qui dépasse */
+  margin-left: 40px;
 }
 .how-it-works .steps .step .logo-fonc {
   height: 20px;
@@ -505,14 +504,14 @@ footer .step {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Prend toute la largeur disponible */
+  width: 100%;
 }
 
 .footer-logo {
   width: auto;
   color: #eaeaea;
   height: 20px;
-  filter: invert(1) brightness(1000%); /* Rend l'image blanche */
+  filter: invert(1) brightness(1000%);
 }
 @media (min-width: 1000px) {
   .footer-logo {

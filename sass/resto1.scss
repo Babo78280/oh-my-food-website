@@ -49,7 +49,7 @@ body {
   }
   h3.section-title1{
     font-size: 24px;
-    font-family: 'Arial', sans-serif; /* Vous pouvez choisir la police qui correspond à votre design */
+    font-family: 'Arial', sans-serif; 
     font-weight: bold;
     position: relative;
     margin-bottom: 10px;
@@ -57,11 +57,11 @@ body {
   h3.section-title1::after{
     content: '';
     display: block;
-    width: 50px; /* La longueur du trait */
-    height: 4px; /* L'épaisseur du trait */
-    background-color: #00bfa5; /* La couleur du trait */
+    width: 50px; 
+    height: 4px; 
+    background-color: #00bfa5; 
     position: absolute;
-    bottom: -5px; /* Ajustez cette valeur pour déplacer le trait vers le bas */
+    bottom: -5px; 
     left: 0;
   }
 }
@@ -277,10 +277,10 @@ body {
     width: 20px;
     height: 20px;
     color: #fff;
-    background-color: #fff; /* Cercle blanc derrière l'icône */
-    border-radius: 50%; /* Pour rendre le cercle rond */
-    padding: 4px; /* Espace autour de l'icône pour créer le cercle */
-    color: #b6e3dc; /* Changer la couleur de l'icône de coche en vert */
+    background-color: #fff; 
+    border-radius: 50%; 
+    padding: 4px; 
+    color: #b6e3dc; 
   }
 }
 
@@ -288,7 +288,7 @@ body {
   transition: padding-right 0.6s ease;
   padding-right: 50px;
   .menu-description span::hover {
-    margin-right: 10px; /* Ajouter une marge droite pour maintenir le prix à une bonne position */
+    margin-right: 10px; 
   }
 }
 }
@@ -299,7 +299,7 @@ body {
         align-items: center;
         padding: 10px;
         flex: 1;
-        transition: padding-right 1s ease; /* Rendre l'animation plus lente */
+        transition: padding-right 1s ease; 
 
 
         .vote {
@@ -386,10 +386,19 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 38%;
-  h2 { 
+
+  h2 {
     margin: 0;
     flex-grow: 1;
     padding: 0;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 !important; // Enlève le padding sur mobile
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: space-between !important; 
+    flex-direction: row !important; 
   }
 }
 
