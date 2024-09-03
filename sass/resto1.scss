@@ -75,8 +75,6 @@ body {
   }
 
   .menu-item {
-    animation: appearEntrance 1.5s ease forwards;
-    opacity: 0;
     display: flex;
     flex-direction: column;
     background-color: $menu-background;
@@ -90,6 +88,10 @@ body {
     position: relative;
     overflow: hidden;
     transition: opacity 0.6s ease;
+    @media screen and (max-width: 768px) {
+      padding: 0px;
+      height: 65px;
+    }
 
      input[type="checkbox"] {
     display: none;
@@ -104,6 +106,12 @@ body {
     span {
       font-size: 1rem;
       margin-top: 0.5rem;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+        width: 15%;
+        padding: 5px;
+      }
     }
 
     .description {
@@ -113,8 +121,45 @@ body {
   }
 }
 
+.menu-bloc:nth-child(1) .menu-item {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+.menu-bloc:nth-child(2) .menu-item {
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
+}
+
+.menu-bloc:nth-child(3) .menu-item {
+  animation: appearDessert 9.5s ease forwards;
+  opacity: 0;
+}
+
 /* Animation pour les éléments d'entrée */
 @keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de plat */
+@keyframes appearPlat {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de dessert */
+@keyframes appearDessert {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -227,6 +272,7 @@ body {
     opacity: 100%;
   }
 }
+
 &:hover .menu-animation {
   flex: 0.1;
   width: inherit;
@@ -237,12 +283,26 @@ body {
     align-items: center;
     width: 100%;
     padding-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 
   .description-container {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
     p {
       margin: 0;
       font-size: 1rem;
       color: $primary-color;
+      white-space: nowrap;      /* Empêche le texte de passer à la ligne suivante */
+      overflow: hidden;         /* Cache le texte qui dépasse du conteneur */
+      text-overflow: ellipsis;  /* Ajoute les '...' à la fin du texte qui dépasse */
+      width: 100%;
 
       &.description {
         font-size: 0.875rem;
@@ -254,6 +314,12 @@ body {
   span {
     font-size: 1rem;
     font-weight: bold;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: flex-end;
+      width: 15%;
+      padding: 5px;
+    }
   }
 }
 
@@ -290,6 +356,15 @@ body {
   padding-right: 50px;
   .menu-description span:hover {
     margin-right: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .description {
+      width: 220px;
+    }
+
+    .description-container p {
+      width: 220px;
+    }
   }
 }
 }

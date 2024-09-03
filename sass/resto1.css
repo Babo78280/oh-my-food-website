@@ -61,8 +61,6 @@ body {
   margin-bottom: 0;
 }
 .menu .menu-item {
-  animation: appearEntrance 1.5s ease forwards;
-  opacity: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -77,6 +75,12 @@ body {
   overflow: hidden;
   transition: opacity 0.6s ease;
 }
+@media screen and (max-width: 768px) {
+  .menu .menu-item {
+    padding: 0px;
+    height: 65px;
+  }
+}
 .menu .menu-item input[type=checkbox] {
   display: none;
 }
@@ -89,13 +93,58 @@ body {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+  .menu .menu-item span {
+    display: flex;
+    align-items: flex-end;
+    width: 15%;
+    padding: 5px;
+  }
+}
 .menu .menu-item .description {
   font-size: 0.875rem;
   color: #777;
 }
 
+.menu-bloc:nth-child(1) .menu-item {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+.menu-bloc:nth-child(2) .menu-item {
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
+}
+
+.menu-bloc:nth-child(3) .menu-item {
+  animation: appearDessert 9.5s ease forwards;
+  opacity: 0;
+}
+
 /* Animation pour les éléments d'entrée */
 @keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de plat */
+@keyframes appearPlat {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de dessert */
+@keyframes appearDessert {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -212,11 +261,27 @@ body {
   align-items: center;
   width: 100%;
   padding-right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .menu .menu-item .menu-description .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 .menu .menu-item .menu-description .description-container p {
   margin: 0;
   font-size: 1rem;
   color: #000;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  overflow: hidden; /* Cache le texte qui dépasse du conteneur */
+  text-overflow: ellipsis; /* Ajoute les '...' à la fin du texte qui dépasse */
+  width: 100%;
 }
 .menu .menu-item .menu-description .description-container p.description {
   font-size: 0.875rem;
@@ -225,6 +290,14 @@ body {
 .menu .menu-item .menu-description span {
   font-size: 1rem;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .menu .menu-item .menu-description span {
+    display: flex;
+    align-items: flex-end;
+    width: 15%;
+    padding: 5px;
+  }
 }
 .menu .menu-item .card-check {
   position: absolute;
@@ -257,6 +330,14 @@ body {
 }
 .menu .menu-item .menu-description:hover .menu-description span:hover {
   margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .menu .menu-item .menu-description:hover .description {
+    width: 220px;
+  }
+  .menu .menu-item .menu-description:hover .description-container p {
+    width: 220px;
+  }
 }
 
 .menu-item .menu-description {
