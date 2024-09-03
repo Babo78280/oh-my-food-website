@@ -14,7 +14,7 @@ body .loader {
   width: 80px;
   height: 80px;
   border: 8px solid #f3f3f3;
-  border-top: 8px solid #FF0066;
+  border-top: 8px solid #9356DC;
   border-radius: 50%;
   animation: spin 1.5s linear infinite, fadeOut 1s forwards 1.5s;
   background-color: transparent;
@@ -110,6 +110,10 @@ h2 {
   display: inline-block;
   width: 15rem;
   height: 50px;
+}
+.intro .explore-btn:hover {
+  opacity: 0.88;
+  box-shadow: 0 4px 10px 0 #afafaf;
 }
 .intro .explore-button:hover {
   background: linear-gradient(90deg, #63b3ed, #b066fa, #b066fa);
@@ -460,7 +464,7 @@ footer .step {
   height: 40px;
 }
 .how-it-works .steps .step .step-icon {
-  background-color: #8e44ad;
+  background-color: #9356DC;
   color: white;
   border-radius: 50%;
   font-size: 14.18px;
@@ -497,7 +501,7 @@ footer .step {
   height: 21px;
   margin: 10px;
   font-size: 18px;
-  color: #8e44ad;
+  color: #9356DC;
 }
 
 .restaurant-header {

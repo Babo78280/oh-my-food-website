@@ -12,7 +12,7 @@ body {
     width: 80px;
     height: 80px;
     border: 8px solid #f3f3f3;
-    border-top: 8px solid #FF0066; 
+    border-top: 8px solid #9356DC;
     border-radius: 50%;
     animation: spin 1.5s linear infinite, fadeOut 1s forwards 1.5s;
     background-color: transparent;
@@ -102,6 +102,10 @@ h2 {
       display: inline-block;
       width: 15rem;
       height: 50px;
+      &:hover {
+        opacity: 0.88;
+        box-shadow: 0 4px 10px 0 #afafaf;
+      }
   }
   .explore-button:hover {
       background: linear-gradient(90deg, #63b3ed, #b066fa, #b066fa);
@@ -117,7 +121,6 @@ h2 {
       display: flex;
       .step {
           text-align: center;
-
           .step-icon {
               font-size: 2em;
               margin-bottom: 10px;
@@ -153,13 +156,13 @@ h2 {
           background-color: #fff;
           //  styles spécifiques pour h3 et p
           h3 {
-              font-size: 1.5em; 
+              font-size: 1.5em;
               margin: 0.5em 0;
               margin: 0px;
           }
 
           p {
-              font-size: 1em; 
+              font-size: 1em;
               color: #666;
           }
       }
@@ -171,8 +174,8 @@ footer {
 @media (min-width: 1000px){
   display: flex;
   flex-direction: column;
-  align-items: flex-end; 
-  text-align: right; 
+  align-items: flex-end;
+  text-align: right;
   padding: 20px;
 }
   background-color: #333;
@@ -186,29 +189,29 @@ footer {
     }
       flex-direction:column ;
       display: flex;
-      align-items: flex-start; 
-      gap: 10px; 
+      align-items: flex-start;
+      gap: 10px;
     }
 
     .footer-link {
       display: flex;
-      align-items: center; 
-      gap: 10px; 
-      color: #fff; 
-      font-size: 14.5px; 
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 14.5px;
       @media (min-width: 1000px){
 
       }
 
       img {
-        width: 11px; 
-        height: 13px; 
+        width: 11px;
+        height: 13px;
       }
     }
 
     p {
-      color: #fff; 
-      margin: 0; 
+      color: #fff;
+      margin: 0;
     }
   .footer-links {
       p {
@@ -221,35 +224,35 @@ footer {
   .location-container {
       display: flex;
       align-items: center;
-      background-color: #f1f1f1; 
-      padding: 10px; 
-      border-radius: 5px; 
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
   }
 
   .location-icon {
-      width: 12px; 
-      height: 12px; 
-      background: url(assets/images/logo/Pin.png) no-repeat center center; 
+      width: 12px;
+      height: 12px;
+      background: url(assets/images/logo/Pin.png) no-repeat center center;
       background-size: cover;
-      margin-right: 8px; 
+      margin-right: 8px;
   }
 
   .location-text {
-      font-family: Arial, sans-serif; 
-      font-size: 14px; 
-      color: #333; 
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
   }
   .steps-container {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; 
-      gap: 10px; 
+      align-items: flex-start;
+      gap: 10px;
   }
 
   .step {
-      font-family: Arial, sans-serif; 
-      font-size: 14px; 
-      color: #333; 
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
   }
 }
 .restaurants {
@@ -267,8 +270,8 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 20px; 
-      width: 100%; 
+      margin-bottom: 20px;
+      width: 100%;
       border-radius: 10px 10px 0px 0px;
       position: relative;
       text-decoration: none;
@@ -302,8 +305,8 @@ footer {
             height: 231px;
 
           }
-          width: 100%; 
-          height: 200px; 
+          width: 100%;
+          height: 200px;
           object-fit: cover;
           border-radius: 10px 10px 0px 0px;
 
@@ -326,12 +329,12 @@ footer {
 
 
           h3 {
-              font-size: 1.5em; 
+              font-size: 1.5em;
               margin: 0px;
           }
 
           p {
-              font-size: 1em; 
+              font-size: 1em;
               color: #666;
               margin: 1%;
           }
@@ -345,21 +348,21 @@ footer {
   }
 }
 .logo-container img {
-  width: 200px; 
-  max-width: 100%; 
+  width: 200px;
+  max-width: 100%;
 
   @media (max-width: 768px) {
-    width: 12rem; 
+    width: 12rem;
   }
 
   @media (max-width: 480px) {
-    width: 12rem; 
+    width: 12rem;
   }
 }
 .main-header {
-  background-color: #fff; 
-  padding-bottom: 0; 
-  text-align: center; 
+  background-color: #fff;
+  padding-bottom: 0;
+  text-align: center;
   position: fixed;
   width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -370,15 +373,15 @@ footer {
 }
 
 .logo-container {
-  background-color: #fff; 
-  padding: 5px 0; 
-  margin-bottom: 0; 
+  background-color: #fff;
+  padding: 5px 0;
+  margin-bottom: 0;
 }
 
 .location-section {
-  background-color: #eaeaea; 
-  padding: 10px 0; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  background-color: #eaeaea;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding-top: 50px;
 }
 
@@ -386,15 +389,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 10px 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
   @media (min-width: 1000px){
     padding: 2px 2px 10px 2px;
     margin-top: 20px;}
 
   .location-icon {
-    margin-right: 10px; 
+    margin-right: 10px;
     padding-top: 10px;
   }
 
@@ -407,17 +410,17 @@ footer {
 /* Ajustements pour les différentes tailles d'écran */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 12rem; 
+    width: 12rem;
   }
 }
 
 @media (max-width: 480px) {
   .logo-container img {
-    width: 12rem; 
+    width: 12rem;
   }
 }
 .nav-background {
-  background-color: #f6f6f6; 
+  background-color: #f6f6f6;
   padding: 20px;
   @media (min-width: 1000px){
     box-shadow: 0px 0px 0px 0px;
@@ -452,7 +455,7 @@ footer {
 
 
         .step-icon {
-          background-color: #8e44ad;
+          background-color: #9356DC;
           color: white;
           border-radius: 50%;
           font-size: 14.18px;
@@ -462,8 +465,8 @@ footer {
           align-items: center;
           justify-content: center;
           font-weight: bold;
-          position: absolute; 
-          left: -20px; 
+          position: absolute;
+          left: -20px;
           top: 50%;
           transform: translateY(-50%);
         }
@@ -471,7 +474,7 @@ footer {
         .step-info {
           display: flex;
           align-items: center;
-          margin-left: 40px; 
+          margin-left: 40px;
         }
 
         .logo-fonc {
@@ -495,14 +498,14 @@ footer {
   height: 21px;
   margin: 10px;
   font-size: 18px;
-  color: #8e44ad
+  color: #9356DC
 
   }
   .restaurant-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%; 
+      width: 100%;
     }
     .footer-logo{
       @media (min-width: 1000px){
@@ -512,7 +515,7 @@ footer {
       width: auto;
       color: #eaeaea;
       height : 20px;
-      filter: invert(1) brightness(1000%); 
+      filter: invert(1) brightness(1000%);
     }
 
     .go-back{
