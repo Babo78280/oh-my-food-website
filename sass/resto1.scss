@@ -17,7 +17,11 @@ body {
   padding: 0;
   background-color: $background-color;
 }
-
+a {
+  color: inherit; 
+  cursor: pointer; 
+  text-decoration: none; 
+}
 .header {
   background-color: $primary-color;
   color: $secondary-color;

@@ -18,7 +18,11 @@ body {
     background-color: transparent;
     z-index: 9999;
 }
-
+a {
+  color: inherit; 
+  cursor: pointer; 
+  text-decoration: none; 
+}
 @keyframes spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
@@ -156,9 +160,9 @@ h2 {
           background-color: #fff;
           //  styles spécifiques pour h3 et p
           h3 {
-              font-size: 1.5em;
-              margin: 0.5em 0;
-              margin: 0px;
+            font-size: 18px;
+            margin: 10px 0 0 7px
+            
           }
 
           p {
@@ -329,8 +333,8 @@ footer {
 
 
           h3 {
-              font-size: 1.5em;
-              margin: 0px;
+            font-size: 18px;
+            margin: 10px 0 0 7px
           }
 
           p {
